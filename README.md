@@ -13,7 +13,7 @@ Add `google_cloud_events` to your `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  google_cloudevents_dart: ^1.0.0
+  eventarc: ^1.0.0
 ```
 
 Then, run `pub get` or `flutter pub get` to install the package.
