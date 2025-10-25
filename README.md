@@ -1,4 +1,4 @@
-# Google Cloud Events SDK for Dart
+# eventarc
 
 This Dart package provides developers with the tools necessary to easily interact with Google Cloud Events, facilitating the integration of Google Cloud services into Dart and Flutter applications. By abstracting the complexity of event handling, this SDK enables you to subscribe to, manage, and dispatch events from Google Cloud services with minimal effort.
 

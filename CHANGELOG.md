@@ -1,3 +1,9 @@
+# 1.0.2
+* Fixes for analyzer
+
+# 1.0.1
+* Initial stable release.
+
 ## 0.0.3
 
 - Format source files.
