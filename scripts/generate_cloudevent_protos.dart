@@ -1,29 +1,27 @@
-import 'dart:io';
-
-import 'package:logging/logging.dart';
-
-final logger = Logger('GenerateProtosLogger');
+// final logger = Logger('GenerateProtosLogger');
+//
+import 'package:universal_io/io.dart';
 
 void setupLogging() {
-  Logger.root.level = Level.INFO;
-
-  // Configure a listener for the root logger
-  Logger.root.onRecord.listen((LogRecord rec) {
-    // Instead of print, use stdout and stderr for log messages based on
-    // severity
-    if (rec.level >= Level.SEVERE) {
-      stderr.writeln('${rec.level.name}: ${rec.time}: ${rec.message}');
-    } else {
-      stdout.writeln('${rec.level.name}: ${rec.time}: ${rec.message}');
-    }
-    // Optionally, include error and stack trace if they are not null
-    if (rec.error != null) {
-      stderr.writeln(rec.error);
-    }
-    if (rec.stackTrace != null) {
-      stderr.writeln(rec.stackTrace);
-    }
-  });
+//   Logger.root.level = Level.INFO;
+//
+//   // Configure a listener for the root logger
+//   Logger.root.onRecord.listen((LogRecord rec) {
+//     // Instead of print, use stdout and stderr for log messages based on
+//     // severity
+//     if (rec.level >= Level.SEVERE) {
+//       stderr.writeln('${rec.level.name}: ${rec.time}: ${rec.message}');
+//     } else {
+//       stdout.writeln('${rec.level.name}: ${rec.time}: ${rec.message}');
+//     }
+//     // Optionally, include error and stack trace if they are not null
+//     if (rec.error != null) {
+//       stderr.writeln(rec.error);
+//     }
+//     if (rec.stackTrace != null) {
+//       stderr.writeln(rec.stackTrace);
+//     }
+//   });
 }
 
 Future<void> generateDartProtos() async {
@@ -68,9 +66,9 @@ Future<void> generateDartProtos() async {
   );
 
   if (result.exitCode != 0) {
-    logger.severe('Error running protoc: ${result.stderr}');
+    //  logger.severe('Error running protoc: ${result.stderr}');
   } else {
-    logger.info('Successfully generated Dart Protobufs.');
+    //logger.info('Successfully generated Dart Protobufs.');
   }
 }
 

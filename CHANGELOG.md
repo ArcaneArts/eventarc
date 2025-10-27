@@ -1,3 +1,8 @@
+# 1.0.3
+* Remove logger dep
+* Add extensions
+* Unify to eventarc.dart
+
 # 1.0.2
 * Fixes for analyzer
 
